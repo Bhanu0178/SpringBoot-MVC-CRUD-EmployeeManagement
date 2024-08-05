@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: 28SpringBootProj-28-web-MVC-2
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: MYDB1
+    password: 123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    view:
+      prefix: WEB-INF/view/
+      suffix: .jsp
+server:
+  port: 8099
+  servlet:
+    context-path: /test
